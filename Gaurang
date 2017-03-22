@@ -1,0 +1,43 @@
+
+
+import java.io.*;
+import java.util.*;
+class Sheep
+{
+	public static void main (String[] args) throws IOException
+	{
+	  
+	  int sum,f=0,temp;
+	  Scanner sc = new Scanner(System.in);
+	  
+	  int t = sc.nextInt();
+	  while(f++!=t)
+	  {
+	     int i=1;
+	  int a[] = new int [10];
+	  int n = sc.nextInt();
+	  temp=n;
+	  if(n==0) System.out.println("Case #"+f+": INSOMNIA");
+	  else
+	  {
+	  do
+	   {
+	        temp=i*n;
+	        while(temp!=0)
+	        {
+	             a[temp%10]= 1;
+	             temp=temp/10;
+	            
+	        }
+	        i++;
+	       
+	   }while(sum(a)!=10);
+	   System.out.println("Case #"+f+": "+(i-1)*n);
+	  }
+	  }
+    }
+    static int sum(int a[])
+    {
+        return(a[0]+a[1]+a[2]+a[3]+a[4]+a[5]+a[6]+a[7]+a[8]+a[9]);
+    }
+}
