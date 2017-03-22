@@ -1,4 +1,4 @@
-# CodeJam-COUNTSHEEP
+# CodeJam2016-Practice
 ## Solutions to the practice problems of Google Code Jam 2016.
 Problem statement:  
   * See code.google.com/codejam.
